@@ -14,4 +14,8 @@ func main() {
 	if v, ok := m["Nathan"]; ok {
 		fmt.Println("Exist.", v, ok)
 	}
+	
+	for k, v := range m {
+		fmt.Println(k, v)
+	}
 }
