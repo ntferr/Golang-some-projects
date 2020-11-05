@@ -11,9 +11,15 @@ func main() {
 	v, ok := m["Tod"]
 	fmt.Println(v, ok)
 	
+	fmt.Println(m)
+	
 	if v, ok := m["Nathan"]; ok {
 		fmt.Println("Exist.", v, ok)
 	}
+	
+	m["Jess"] = 29
+	
+	fmt.Println(m)
 	
 	for k, v := range m {
 		fmt.Println(k, v)
